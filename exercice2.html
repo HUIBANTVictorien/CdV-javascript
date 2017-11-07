@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-3.2.1.js"></script>
+    <title>exercice 2 cdv javascript</title>
+  </head>
+  <p id="char4"></p>
+  <p id="char10"></p>
+  <p id="char35"></p>
+  <p id="char59"></p>
+  <body>
+    <script>
+      $(function() {
+        var message = 'En informatique, un logiciel est un ensemble de séquences d’instructions interprétables par une machine et d’un jeu de données nécessaires à ces opérations.';
+        $('#char4').text('Le quartième caractère est ' +'\'' + message.charAt(3) + '\'');
+        $('#char10').text('Le quartième caractère est ' +'\'' + message.charAt(9) + '\'');
+        $('#char35').text('Le quartième caractère est ' +'\'' + message.charAt(34) + '\'');
+        $('#char59').text('Le quartième caractère est ' +'\'' + message.charAt(58) + '\'');
+      });
+    </script>
+  </body>
+</html>

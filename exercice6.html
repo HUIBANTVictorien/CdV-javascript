@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.2.1.js"></script>
+  <title>exercice 6 cdv javascript</title>
+</head>
+<p id="numberB"></p>
+<body>
+  <script>
+  $(function() {
+    var message = 'Betty Botter bought a bit of butter, the butter Betty Botter bought was a bit bitter, and made her batter bitter. But a bit of better butter makes better batter. So Betty Botter bought a bit of better butter. Making Betty Botter\'s bitter batter better.';
+    var count = 0;
+    var count2 = 0;
+    var pos = message.indexOf('b');
+    var pos2 = message.indexOf('B');
+    while (pos != -1) {
+      count++;
+      pos = message.indexOf( 'b', pos + 1 );
+    } while (pos2 != -1) {
+      count2++;
+      pos2 = message.indexOf( 'B', pos2 + 1 );
+    }
+    $('#numberB').text('Il y a ' + (count + count2) + ' \'b\' dans le texte');
+  });
+  </script>
+</body>
+</html>
